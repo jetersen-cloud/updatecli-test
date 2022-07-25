@@ -1,0 +1,21 @@
+name: tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+env:
+  PLUGIN_MANAGER_VERSION: '2.12.8'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Test
+        run: |
+          mvn verify

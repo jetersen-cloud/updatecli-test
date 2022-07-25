@@ -1,0 +1,10 @@
+target
+.idea/
+*.iml
+pct-work/
+pct-report.*
+logs/
+megawar.war
+pct.jar
+plugin-manager.jar
+updatecli.d/
